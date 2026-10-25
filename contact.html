@@ -26,7 +26,25 @@
     <section class="contact">
       <h1>Get in Touch</h1>
       <div class="contact-wrapper">
-        <form class="contact-form" novalidate>
+        <form
+          class="contact-form"
+          action="https://formsubmit.co/hello@adventureescapesa.co.za"
+          method="POST"
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="New Adventure Escape SA booking inquiry"
+          />
+          <input type="hidden" name="_template" value="table" />
+          <input
+            type="text"
+            name="_honey"
+            tabindex="-1"
+            autocomplete="off"
+            style="display: none"
+          />
+
           <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
 
@@ -51,13 +69,7 @@
           <label for="message">Message:</label>
           <textarea id="message" name="message"></textarea>
 
-          <button type="submit" class="btn">Submit</button>
-          <p
-            class="form-status"
-            id="form-status"
-            role="status"
-            aria-live="polite"
-          ></p>
+          <button type="submit" class="btn">Send inquiry</button>
         </form>
 
         <aside class="contact-panel">
@@ -75,6 +87,5 @@
     <footer>
       <p>&copy; 2026 Adventure Escape SA | Cape Town, Western Cape</p>
     </footer>
-    <script src="assets/js/contact.js" defer></script>
   </body>
 </html>

@@ -29,9 +29,9 @@ The Figma file contains app screen designs, including home, overview, about, con
 
 To capture a locally running website page into Figma, install the **html.to.design** Figma plugin and its Chrome extension. Open the page in Chrome and use the extension's **Capture Current Page** option. The plugin's URL importer cannot access pages hosted on your computer at `localhost`.
 
-## Contact form status
+## Contact form delivery
 
-The contact form is currently front-end only. It does not send or store submissions because no form service or backend is connected.
+The contact form sends inquiries to `hello@adventureescapesa.co.za` using FormSubmit, a third-party form delivery service. The first time the form is submitted, the mailbox owner must confirm the activation email from FormSubmit before submissions will be delivered. Test the form after activation to verify delivery. FormSubmit processes the information entered in the form.
 
 ## Project structure
 
